@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="barra_topo">
+        <div id="conteiner">
+            <img src="/imagens/Logo_Athon_Branco_Transparente1.png" alt="" id="logo">
+        </div>
+        <div id="conteiner2">
+        <p id="nome_barra_superior">Yuri Lucka Carriel Rodrigues</p>
+        <img src="/imagens/Yuri.jpg" alt="" id="foto">
+        </div>
+    </div>
+    <div id="conteudo">
+        <div id="conteiner_carteirinha">
+            <div id="acesso">
+                <p id="text_dados">Insira os dados</p>
+                <input type="text" placeholder="RA" id="ra">
+                <input type="password" placeholder="Senha" id="senha">
+                <button id="btn">Gerar Carteirinha</button>
+            </div>
+        </div>
+        <div id="modelo">
+
+            <div class="front">
+                <div class="superior_frente_carteirinha">
+                    <div class="foto_qr">
+                        <img src="/imagens/perfil.png" id="foto_perfil_carteirinha">
+                        <img src="/imagens/qr_yuri.png" id="qr_code">
+                    </div>
+
+                    <div id="logo_carteirinha">
+                        <img src="/imagens/logo_colorida.svg">
+                    </div>
+                </div>
+                <div class="inferior_frente_carteirinha">
+                    <h1 id="nome_aluno">XXXX XXXX XXXX XXXX</h1>
+                    <p id="curso_aluno">XXXXXXXX</p>
+                </div>
+            </div>
+
+
+
+            <div class="back">
+                <div class="superior_verso_carteirinha">
+                    <ul>
+                        <li class="dados_pessoais">Nome: <span id="nome_li" class="dados_personalizados">XXXX XXXX XXXX XXXX</span></li>
+                        <li class="dados_pessoais">Matrícula: <span id="matricula_li" class="dados_personalizados">XXXXXXXXXXXX</span></li>
+                        <li class="dados_pessoais">Curso: <span id="curso_li" class="dados_personalizados">XXXXXXXX</span></li>
+                        <li class="dados_pessoais">CPF: <span id="cpf_li" class="dados_personalizados">XXX.XXX.XXX-XX</span></li>
+                        <li class="dados_pessoais">Data Nasc: <span id="data_nasc_li" class="dados_personalizados">XX/XX/XXXX</span></li>
+                        <li class="dados_pessoais">Validade: <span id="validade_li" class="dados_personalizados">XX/XX/XXXX</span></li>
+                    </ul>
+                </div>
+                <div class="inferior_verso_carteirinha">
+                    <h1 id="codigo">Código de validação: <span id="verificacao_li">XXXXXXXXXXXXXXXXXX</span></h1>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>

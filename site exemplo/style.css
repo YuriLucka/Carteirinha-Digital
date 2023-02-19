@@ -1,0 +1,241 @@
+*{
+    border: none;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+}
+
+
+body{
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+}
+
+#barra_topo{
+    background-color: #2F435F;
+    width: 100vw;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#foto{
+    height: 20px;
+    margin: -1px 25px 0 10px;
+}
+#logo{
+    height: 27px;
+}
+
+#conteiner{
+    width: 72.912px;
+    height: 27px;
+    padding: 7px 10px 6px 10px;
+}
+
+#conteiner2{
+    height: 27px;
+    padding: 7px 10px 6px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nome_barra_superior{
+    font-size: 12px;
+    color: #FFFFFF;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;;
+}
+
+#conteudo{
+    height: 92vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+#conteiner_carteirinha{
+    height: 230px;
+    width: 300px;
+    background-color: #2F435F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 0 0 0;
+}
+#acesso{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+input{
+    padding: 8px;
+    margin: 4px;
+    outline: none;
+    border-radius: 5px;
+}
+
+#text_dados{
+    font-size: 12pt;
+    margin-bottom: 15px;
+    color: white;
+}
+
+#btn{
+    padding: 8px;
+    background-color: #4a679090;
+    color: white;
+    border-radius: 5px;
+    margin: 10px 0 0 0;
+    cursor: pointer;
+    outline: none;
+    border: solid 1px #324560;
+}
+#btn:hover{
+    background-color: #4a6790bc;
+    box-shadow: #4a6790bc 0px 0px 10px;
+
+}
+
+#modelo{
+    height: 300px;
+    width: 500px;
+    margin: 20px;
+}
+
+/*TESTE QUALQUER SÒ APAGAR*/
+
+#modelo .back, .front{
+    border-radius: 20px;
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backface-visibility: hidden;
+    box-shadow: rgba(0, 0, 0, 0.344) 0 5px 30px;
+    transition: 1.3s ease
+
+}
+
+#modelo .front{
+    background-image: linear-gradient(110deg, #F4AC3A 40%, white 40%);
+    transform: perspective(1500px) rotateY(0deg);
+}
+
+#modelo .back{
+    background-image: linear-gradient(90deg, #F4AC3A 75%, white 75%);
+    transform: perspective(1500px) rotateY(180deg);
+}
+
+
+#modelo:hover .front{
+    transform: perspective(1500px) rotateY(180deg);
+}
+#modelo:hover .back{
+    transform: perspective(1500px) rotateY(360deg);
+}
+
+/*FRENTE*/
+#foto_perfil_carteirinha{
+    height: 110px;
+    border-radius: 10px 0px 10px 0px;
+    border: solid 4px rgba(255, 255, 255, 0.571);
+}
+#qr_code{
+    height: 70px;
+    width: 70px;
+    margin-top: 10px;
+    opacity: 70%;
+    border-radius: 10px;
+    visibility: hidden;
+}
+#logo_carteirinha{
+    margin: 0px 20% 0px 0px;
+}
+#logo_carteirinha img{
+    height: 70px;
+}
+.front .superior_frente_carteirinha{
+    display: flex;
+    width: inherit;
+    justify-content: space-between;
+    align-items: center;
+}
+.front .foto_qr{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px 0 25px 15px;   
+}
+.front{
+    display: flex;
+    flex-direction: column;
+}
+.front .inferior_frente_carteirinha{
+    background-color: rgb(235, 235, 235);
+    width: inherit;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 15px 15px;
+}
+.front .inferior_frente_carteirinha #nome_aluno{
+    font-size: 15pt;
+    margin-bottom: 2px;
+    color: rgba(0, 0, 0, 0.695);
+}
+.front .inferior_frente_carteirinha #curso_aluno{
+    font-size: 13pt;
+    color: #00000086;
+}
+
+/*VERSO*/
+.back .superior_verso_carteirinha{
+    display: flex;
+    width: inherit;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 98px;
+}
+.back{
+    display: flex;
+    flex-direction: column;
+}
+.back .inferior_verso_carteirinha{
+    background-color: rgb(235, 235, 235);
+    width: inherit;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 15px 15px;
+}
+.back .superior_verso_carteirinha ul{
+    margin: 20px 0 0 20px;
+}
+.back .superior_verso_carteirinha li{
+    margin-bottom: 5px;
+}
+
+.dados_pessoais{
+    color: rgba(93, 93, 93, 0.586);
+}
+.dados_personalizados{
+    color: #ffffffcd;
+}
+
+#codigo{
+    font-size: 12pt;
+    color: rgba(0, 0, 0, 0.514);
+}

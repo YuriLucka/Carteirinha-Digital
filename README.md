@@ -1,6 +1,3 @@
-# Olá Mundo!
- Primeiro Repositorio 
+# Projeto Carteirinha Digital!
 
-Repositorio criado durante uma aula do Guanabara
-
-Essa linha eu alterei diretamente no site
+Repositório criado com aulas do Guanabara.
